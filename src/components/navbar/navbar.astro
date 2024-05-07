@@ -6,36 +6,51 @@ import { Astronav, MenuItems, MenuIcon } from "astro-navbar";
 
 const menuitems = [
   {
-    title: "Features",
+    title: "What we do",
     path: "#",
     children: [
-      { title: "Action", path: "/" },
-      { title: "Another action", path: "#" },
-      { title: "Dropdown Submenu", path: "#" },
-      { title: "404 Page", path: "/404" },
+      { title: "Javascript Development", path: "/what-we-do/jamstack-development" },
+      { title: "JAMStack Development", path: "/what-we-do/jamstack-development" },
+      { title: "Javascript Performance", path: "/what-we-do/javascript-performance" },
+      { title: "eCommerce Development", path: "/what-we-do/headless-ecommerce" },
+      { title: "Digital Strategy", path: "/what-we-do/digital-strategy" },
+      { title: "Integrations", path: "/what-we-do/integration" },
+      { title: "AI Workflows & Agents", path: "/what-we-do/ai" },
     ],
   },
   {
-    title: "Pricing",
-    path: "/pricing",
+    title: "What we use",
+    path: "#",
+    children: [
+      { title: "What is JAMStack", path: "/" },
+      { title: "Headless CMS", path: "/" },
+      { title: "Static Sites", path: "/" },
+      { title: "Decoding the modern web", path: "/" },
+      { title: "React", path: "/technologies/react" },
+      { title: "NextJS", path: "/technologies/nextjs" },
+      { title: "Vue", path: "/technologies/vue" },
+      { title: "Svelte", path: "/technologies/svelte" },
+      { title: "Astro", path: "/technologies/astro" },
+    ],
   },
   {
-    title: "About",
-    path: "/about",
+    title: "Company",
+    path: "#",
+    children: [
+      { title: "Our Story", path: "/our-story" },
+      { title: "How we work", path: "/how-we-work" },
+      // { title: "Case Studies", path: "#" },
+      { title: "Join Our Team", path: "/join-us" },
+    ],
   },
   {
     title: "Blog",
     path: "/blog",
   },
-  {
-    title: "Contact",
-    path: "/contact",
-  },
-  {
-    title: "Pro Version",
-    badge: true,
-    path: "https://astroship-pro.web3templates.com/",
-  },
+  // {
+  //   title: "Contact",
+  //   path: "/contact",
+  // },
 ];
 ---
 
@@ -44,8 +59,8 @@ const menuitems = [
     <Astronav>
       <div class="flex w-full lg:w-auto items-center justify-between">
         <a href="/" class="text-lg"
-          ><span class="font-bold text-slate-800">Astro</span><span
-            class="text-slate-500">ship</span
+          ><span class="font-bold text-slate-800">Jam</span><span
+            class="text-slate-500">works</span
           >
         </a>
         <div class="block lg:hidden">
@@ -91,8 +106,8 @@ const menuitems = [
     </Astronav>
     <div>
       <div class="hidden lg:flex items-center gap-4">
-        <a href="#">Log in</a>
-        <Link href="#" size="md">Sign up</Link>
+        <!-- <a href="#">Log in</a> -->
+        <Link href="/contact" size="md">Get in Touch</Link>
       </div>
     </div>
   </header>

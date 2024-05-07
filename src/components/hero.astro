@@ -6,7 +6,7 @@ import { Icon } from "astro-icon";
 ---
 
 <main
-  class="grid lg:grid-cols-2 place-items-center pt-16 pb-8 md:pt-12 md:pb-24">
+  class="grid lg:grid-cols-2 place-items-center pt-16 pb-8 md:pt-12 mb-12 md:pb-24 px-24 md:px-12 bg-slate-200">
   <div class="py-6 md:order-1 hidden md:block">
     <Picture
       src={heroImage}
@@ -20,25 +20,23 @@ import { Icon } from "astro-icon";
   <div>
     <h1
       class="text-5xl lg:text-6xl xl:text-7xl font-bold lg:tracking-tight xl:tracking-tighter">
-      Marketing website done with Astro
+      Javascript & JAMStack Specialists
     </h1>
     <p class="text-lg mt-4 text-slate-600 max-w-xl">
-      Astroship is a starter template for startups, marketing websites & landing
-      pages.<wbr /> Built with Astro.build and TailwindCSS. You can quickly
-      create any website with this starter.
+      We build websites and apps for the modern web with the latest, innovative technologies.<wbr /> Unlock your business potential with digital experiences that last.
     </p>
     <div class="mt-6 flex flex-col sm:flex-row gap-3">
       <Link
         href="#"
-        href="https://web3templates.com/templates/astroship-starter-website-template-for-astro"
+        href="/contact"
         target="_blank"
         class="flex gap-1 items-center justify-center"
         rel="noopener">
-        <Icon class="text-white w-5 h-5" name="bx:bxs-cloud-download" />
+        <!-- <Icon class="text-white w-5 h-5" name="bx:bxs-cloud-download" /> -->
 
-         Download for Free
+         Work with us
       </Link>
-      <Link
+      <!-- <Link
         size="lg"
         style="outline"
         rel="noopener"
@@ -47,7 +45,7 @@ import { Icon } from "astro-icon";
         target="_blank">
         <Icon class="text-black w-4 h-4" name="bx:bxl-github" />
          GitHub Repo
-      </Link>
+      </Link> -->
     </div>
   </div>
 </main>
